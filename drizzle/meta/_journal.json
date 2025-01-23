@@ -1,0 +1,48 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1735114162447,
+      "tag": "0000_round_squadron_sinister",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1735114252055,
+      "tag": "0001_seed-books",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1735114273850,
+      "tag": "0002_seed-chapters",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1735117122869,
+      "tag": "0003_seed-verses",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1735117142767,
+      "tag": "0004_seed-translations",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1735330301687,
+      "tag": "0005_deep_the_anarchist",
+      "breakpoints": true
+    }
+  ]
+}

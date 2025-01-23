@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX `collections_name_unique` ON `collections` (`name`);
