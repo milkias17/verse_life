@@ -4,6 +4,7 @@ import { db } from "./db";
 import { eq, and } from "drizzle-orm";
 import { books, languages } from "./db/schema";
 import { useLiveQuery } from "drizzle-orm/expo-sqlite";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -152,4 +153,13 @@ const bibleBooks: { [key: string]: string } = {
 
 export function getVerboseBookName(shortName: string): string {
   return bibleBooks[shortName] || "Unknown book";
+}
+
+export async function getUser() {
+  try {
+    return await AsyncStorage.getItem("session");
+  } catch (e) {
+    console.error(e);
+    return null;
+  }
 }

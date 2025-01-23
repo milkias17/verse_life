@@ -169,6 +169,14 @@ export default function RootLayout() {
         <StatusBar style={isDarkColorScheme ? "dark" : "light"} />
         <Stack>
           <Stack.Screen
+            name="(authenticated)"
+            options={{
+              headerShown: false,
+              // title: "Starter Base",
+              // headerRight: () => <ThemeToggle />,
+            }}
+          />
+          <Stack.Screen
             name="(tabs)"
             options={{
               headerShown: false,
